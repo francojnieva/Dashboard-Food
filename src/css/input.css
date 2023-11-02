@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        font-family: Poppins, sans-serif;
+    }
+}
+
+@layer components {
+    .sidebar-link {
+        @apply text-[#A098AE] py-3 px-7 rounded-xl hover:bg-[#F8B602] hover:text-white transition ease-in-out text-[.8rem]
+}
+}
