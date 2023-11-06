@@ -9,6 +9,7 @@ btnToggleMenu.addEventListener('click', () => {
     imgOpenMenu.classList.toggle('hidden')  
     imgcloseMenu.classList.toggle('hidden')
     sidebar.classList.toggle('-left-0')
+    sidebar.classList.toggle('-left-full')
 })
 
 

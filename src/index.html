@@ -11,10 +11,10 @@
     <!-- TITLE -->
     <title>Dashboard</title>
 </head>
-<body>
+<body class="bg-[#F5F5F5]">
     <section>
-        <aside id="sidebar" class="w-48 fixed lg:left-0 top-0 flex h-full flex-col items-center bg-slate-600 lg:w-[20%] xl:w-[18%] -left-full transition-all">
-            <h1 class="py-8 text-3xl font-bold text-[#2E2E2E] md:py-10">GoMeal<span class="text-[#F8B602]">.</span></h1>
+        <aside id="sidebar" class="bg-[#0F172A] w-52 fixed lg:left-0 top-0 flex h-full flex-col items-center -left-full transition-all z-50">
+            <h1 class="py-8 text-3xl font-bold text-white md:py-10">GoMeal<span class="text-[#F8B602]">.</span></h1>
             <nav class="mb-10">
                 <ul class="space-y-5">
                     <li class="sidebar-link"><a href="#"><img class="icon-[mdi--silverware-fork-knife] me-4 text-[1.2rem]" role="img" aria-hidden="true" /> Dashboard</a></li>
@@ -26,17 +26,17 @@
                     <li class="sidebar-link"><a href="#" ><img class="icon-[mdi--cog] me-4 text-[1.2rem]" role="img" aria-hidden="true" /> Setting</a></li>
                 </ul>
             </nav>
-            <div class="mb-20">
+            <div class="mb-20 lg:-mt-8">
                 <article class="bg-gradient-to-r from-[#F8B602] to-[#F4C039] text-white py-3 px-5 rounded-[1rem]">
-                    <p class="py-3 text-[.8rem]">Upgrade your<br>
+                    <p class="py-3 text-[.7rem] lg:py-1">Upgrade your<br>
                     Account to Get Free <br>
                     Voucher</p>
-                    <button class="bg-white py-2 px-4 rounded-lg text-black text-[.7rem]">Upgrade</button>
+                    <button class="bg-white py-2 px-4 rounded-lg text-black text-[.6rem]">Upgrade</button>
                 </article>
             </div>
         </aside>
         <!--MENÚ MOBILE -->
-        <nav class="bg-[#F8B602] lg:hidden fixed w-full bottom-0 left-0">
+        <nav class="bg-[#0F172A] z-50 lg:hidden fixed w-full bottom-0 left-0">
             <ul class="flex items-center justify-between py-5 px-8">
                 <li><a href="#"><img class="icon-[mdi--cog] text-white text-[1.8rem] md:text-[2rem]" role="img" aria-hidden="true" /></a></li>
                 <li><a href="#"><img class="icon-[mdi--forum-outline] text-white text-[1.8rem] md:text-[2rem]" role="img" aria-hidden="true" /></a></li>
@@ -49,7 +49,148 @@
                 </li>
             </ul>
         </nav>
-        <main class="">
+        <main class="lg:pl-52 bg-[#F5F5F5]">
+            <header class="pt-4 px-4 space-y-5 lg:px-7">
+                <div class="lg:flex justify-between">
+                    <h1 class="text-[1.8rem] font-bold text-[#2E2E2E] lg:pt-5">Hello, Patricia</h1>
+                    <form action="#" class="w-full flex items-center relative lg:w-[50%] lg:pt-4">
+                        <img class="icon-[ic--baseline-search] absolute ml-3 text-[#F8B602] text-[1.5rem]" role="img" aria-hidden="true" />
+                        <input type="search" class="w-full outline-none py-3 pl-9 pr-4 text-[.8rem] bg-white rounded-xl" name="search" id="search"  autocomplete="off" placeholder="What do you want eat today...">
+                    </form>
+                </div>
+                <div class="bg-[#F8B602] text-white rounded-lg p-8">
+                    <h2 class="text-[1.5rem] font-bold mb-2">Get Discount Voucher <br>
+                        Up to 20%</h2>
+                    <small class="text-[.7rem]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Fugiat placeat corporis mollitia veniam excepturi harum quod odio odit?</small>
+                    <img src="./assets/banner-women.png" class="w-72 hidden lg:block absolute right-24 top-[6.2rem]" alt="mujer sonriendo con una dona roja en cada mano">
+                </div>
+            </header>
+            <section class="category pt-5 px-4 lg:px-7">
+                <div class="flex items-center justify-between">
+                    <h3 class="text-[#2E2E2E] font-bold">Category</h3>
+                    <div class="flex items-center">
+                        <p class="text-[.8rem] text-[#F8B602] mr-2">View all</p>
+                        <img class="icon-[ic--outline-keyboard-arrow-right] text-[#F8B602] text-[1.2rem]" role="img" aria-hidden="true" />
+                    </div>
+                </div>
+                <div class="flex items-center justify-evenly flex-wrap mt-4">
+                    <button class="category-cards">
+                        <img class="icon-[ic--baseline-bakery-dining]" role="img" aria-hidden="true" />
+                        <figcaption>Bakery</figcaption>
+                    </button>
+                    <button class="category-cards">
+                        <img class="icon-[ic--outline-lunch-dining]" role="img" aria-hidden="true" />
+                        <figcaption>Burger</figcaption>
+                    </button>
+                    <button class="category-cards">
+                        <img class="icon-[mdi--beer-outline]" role="img" aria-hidden="true" />
+                        <figcaption>Beverage</figcaption>
+                    </button>
+                    <button class="category-cards">
+                        <img class="icon-[mdi--food-drumstick]" role="img" aria-hidden="true" />
+                        <figcaption>Chicken</figcaption>
+                    </button>
+                    <button class="category-cards">
+                        <img class="icon-[mdi--pizza]" role="img" aria-hidden="true" />
+                        <figcaption>Pizza</figcaption>
+                    </button>
+                    <button class="category-cards">
+                        <img class="icon-[mdi--fish]" role="img" aria-hidden="true" />
+                        <figcaption>Seafood</figcaption>
+                    </button>
+                </div>
+            </section>
+            <section class="popular-dishes pt-5 px-4 lg:px-7">
+                <div class="flex items-center justify-between">
+                    <h3 class="text-[#2E2E2E] font-bold">Popular Dishes</h3>
+                    <div class="flex items-center">
+                        <p class="text-[.8rem] text-[#F8B602] mr-2">View all</p>
+                        <img class="icon-[ic--outline-keyboard-arrow-right] text-[#F8B602] text-[1.2rem]" role="img" aria-hidden="true" />
+                    </div>
+                </div>
+                <div class="mt-4 flex items-center justify-evenly flex-wrap">
+                    <article class="popular-dishes-cards">
+                        <p class="sale">15% Off</p>
+                        <img class="icon-[mdi--heart] text-[#EB5757] text-[1.2rem]  absolute right-4" role="img" aria-hidden="true" />
+                        <img src="./assets/burger1.jpg" class="mt-2" alt="hamburguesas">
+                        <div class="star-container">
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                        </div>
+                        <div class="price-container">
+                            <p>Fish Burger <br><span class="text-[#F8B602] text-[1rem]">$</span><span class="font-bold text-[1rem]">5.59</span></p>
+                            <button><img class="icon-[material-symbols--add] text-white" role="img" aria-hidden="true" /></button>
+                        </div>
+                    </article>
+                    <article class="popular-dishes-cards">
+                        <p class="sale">15% Off</p>
+                        <img class="icon-[mdi--heart] text-[#DBDBDB] text-[1.2rem] absolute right-4" role="img" aria-hidden="true" />
+                        <img src="./assets/burger2.jpg" class="mt-2" alt="hamburguesas">
+                        <div class="star-container">
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" /> 
+                        </div>
+                        <div class="price-container">
+                            <p>Beff Burger <br><span class="text-[#F8B602] text-[1rem]">$</span><span class="font-bold text-[1rem]">5.59</span></p>
+                            <button><img class="icon-[material-symbols--add] text-white" role="img" aria-hidden="true" /></button>
+                        </div>
+                    </article>
+                    <article class="popular-dishes-cards">
+                        <p class="sale">15% Off</p>
+                        <img class="icon-[mdi--heart] text-[#DBDBDB] text-[1.2rem] absolute right-4" role="img" aria-hidden="true" />
+                        <img src="./assets/burger1.jpg" class="mt-2" alt="hamburguesas">
+                        <div class="star-container">
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                            <img class="icon-[material-symbols--star-rate]" role="img" aria-hidden="true" />
+                        </div>
+                        <div class="price-container">
+                            <p>Cheese Burger <br><span class="text-[#F8B602] text-[1rem]">$</span><span class="font-bold text-[1rem]">5.59</span></p>
+                            <button><img class="icon-[material-symbols--add] text-white" role="img" aria-hidden="true" /></button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="recent-order pt-5 px-4 mb-16 lg:px-7">
+                <div class="flex items-center justify-between">
+                    <h3 class="text-[#2E2E2E] font-bold">Recent Order</h3>
+                    <div class="flex items-center">
+                        <p class="text-[.8rem] text-[#F8B602] mr-2">View all</p>
+                        <img class="icon-[ic--outline-keyboard-arrow-right] text-[#F8B602] text-[1.2rem]" role="img" aria-hidden="true" />
+                    </div>
+                </div>
+                <div class="mt-4 flex items-center justify-evenly flex-wrap">
+                    <article class="recent-order-cards">
+                        <img class="icon-[mdi--heart] text-[#DBDBDB] text-[1.2rem] absolute right-4" role="img" aria-hidden="true" />
+                        <img src="./assets/pizza1.jpg" alt="pizza">
+                        <p class="text-[.8rem]">Pizza</p>
+                        <p class="font-bold"><span>$</span>5.59</p>
+                        <p class="text-[#A098AE] text-[.8rem]">4.97 km - 21 min</p>
+                    </article>
+                    <article class="recent-order-cards">
+                        <img class="icon-[mdi--heart] text-[#DBDBDB] text-[1.2rem] absolute right-4" role="img" aria-hidden="true" />
+                        <img src="./assets/pizza2.jpg" alt="pizza">
+                        <p class="text-[.8rem]">Pizza</p>
+                        <p class="font-bold"><span>$</span>5.59</p>
+                        <p class="text-[#A098AE] text-[.8rem]">4.97 km - 21 min</p>
+                    </article>
+                    <article class="recent-order-cards">
+                        <img class="icon-[mdi--heart] text-[#DBDBDB] text-[1.2rem] absolute right-4" role="img" aria-hidden="true" />
+                        <img src="./assets/pizza3.jpg" alt="pizza">
+                        <p class="text-[.8rem]">Pizza</p>
+                        <p class="font-bold"><span>$</span>5.59</p>
+                        <p class="text-[#A098AE] text-[.8rem]">4.97 km - 21 min</p>
+                    </article>
+                </div>
+            </section>
         </main>
         <aside>
 
