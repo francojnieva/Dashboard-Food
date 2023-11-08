@@ -1,3 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        font-family: Poppins, sans-serif;
+    }
+}
+
+@layer components {
+    .sidebar-link {
+        @apply text-[#A098AE] py-3 px-7 rounded-xl hover:bg-[#F8B602] hover:text-white transition ease-in-out text-[.8rem]
+    }
+    .category-cards {
+        @apply bg-white py-4 px-8 rounded-xl mb-4 mx-1 w-32 xl:w-28 xl:px-5 shadow-lg
+    }
+
+    .category-cards img {
+        @apply text-[3rem] text-[#F8B602] mb-2
+    }
+
+    .category-cards figcaption {
+        @apply text-[.75rem] text-[#A098AE]
+    }
+
+    .popular-dishes-cards {
+        @apply w-40 mb-5 bg-white p-4 rounded-lg relative md:w-48 shadow-lg xl:w-56
+    }
+
+    .popular-dishes-cards .sale {
+        @apply absolute left-0 text-[.8rem] text-white bg-[#EB5757] ps-3 pe-2 py-0.5 rounded-r-md
+    }
+
+    .popular-dishes-cards .star-container {
+        @apply text-[#F8B602]
+    }
+
+    .popular-dishes-cards .price-container {
+        @apply  flex items-center justify-between mt-2
+    }
+
+    .popular-dishes-cards .price-container p {
+        @apply  text-[.8rem]
+    }
+
+    .popular-dishes-cards .price-container button {
+        @apply  bg-[#F8B602]  rounded-md py-1 px-2.5
+    }
+
+    .recent-order-cards {
+        @apply w-40 text-center mb-5 p-4 bg-white rounded-lg relative space-y-2 md:w-48 shadow-lg xl:w-56
+    }
+
+    .recent-order-cards span {
+        @apply text-[#F8B602] 
+    }
+}
