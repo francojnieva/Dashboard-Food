@@ -12,7 +12,7 @@
 
 @layer components {
     .sidebar-link {
-        @apply text-[#A098AE] py-3 px-7 rounded-xl hover:bg-[#F8B602] hover:text-white transition ease-in-out text-[.8rem]
+        @apply text-[#A098AE] py-3 px-7 rounded-xl hover:bg-[#F8B602] hover:text-white transition ease-in-out text-[.7rem]
     }
     .category-cards {
         @apply bg-white py-4 px-8 rounded-xl mb-4 mx-1 w-32 xl:w-28 xl:px-5 shadow-lg
@@ -27,7 +27,7 @@
     }
 
     .popular-dishes-cards {
-        @apply w-40 mb-5 bg-white p-4 rounded-lg relative md:w-48 shadow-lg xl:w-56
+        @apply w-44 mb-5 bg-white p-4 rounded-lg relative mx-4 md:w-48 shadow-lg xl:w-56
     }
 
     .popular-dishes-cards .sale {
@@ -51,7 +51,7 @@
     }
 
     .recent-order-cards {
-        @apply w-40 text-center mb-5 p-4 bg-white rounded-lg relative space-y-2 md:w-48 shadow-lg xl:w-56
+        @apply w-44 text-center mb-5 mx-4 p-4 bg-white rounded-lg relative space-y-2 md:w-48 shadow-lg xl:w-56
     }
 
     .recent-order-cards span {
