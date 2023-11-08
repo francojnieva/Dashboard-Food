@@ -40,7 +40,7 @@
             <ul class="flex items-center justify-between py-4 px-8">
                 <li><a href="#"><img class="icon-[mdi--cog] text-white text-[1.8rem] md:text-[2rem]" role="img" aria-hidden="true" /></a></li>
                 <li><a href="#"><img class="icon-[mdi--forum-outline] text-white text-[1.8rem] md:text-[2rem]" role="img" aria-hidden="true" /></a></li>
-                <li><a href="#"><img class="icon-[ic--baseline-account-circle] text-white text-[1.8rem] md:text-[2rem]" role="img" aria-hidden="true" /></a></li>
+                <li><a href="#" class="btnToggleBalance"><img class="icon-[ic--baseline-account-circle] text-white text-[1.8rem] md:text-[2rem]" role="img" aria-hidden="true" /></a></li>
                 <li>
                     <a href="#" class="btnToggleMenu">
                         <img class="icon-[ic--outline-menu] open-menu text-white text-[1.8rem] md:text-[2rem]" role="img" aria-hidden="true" />
@@ -58,11 +58,11 @@
                         <input type="search" class="w-full outline-none py-3 pl-9 pr-4 text-[.8rem] bg-white rounded-xl" name="search" id="search"  autocomplete="off" placeholder="What do you want eat today...">
                     </form>
                 </div>
-                <div class="bg-[#F8B602] text-white rounded-lg p-8 relative">
+                <div class="bg-[#F8B602] text-white rounded-lg p-8 relative lg:p-9">
                     <h2 class="text-[1.5rem] font-bold mb-2">Get Discount Voucher <br>
                         Up to 20%</h2>
                     <small class="text-[.7rem] relative z-10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Fugiat placeat corporis mollitia veniam excepturi harum quod odio odit?</small>
-                    <img src="./assets/banner-women.png" class="w-72 hidden lg:block absolute right-10 top-0" alt="mujer sonriendo con una dona roja en cada mano">
+                    <img src="./assets/banner-women.png" class="w-72 hidden lg:block absolute right-10 top-2" alt="mujer sonriendo con una dona roja en cada mano">
                 </div>
             </header>
             <section class="category pt-5 px-4 lg:px-7">
@@ -192,7 +192,7 @@
                 </div>
             </section>
         </main>
-        <aside class="balance-section bg-[#0F172A] lg:bg-white py-3 px-3 w-52 fixed h-full top-0 right-0 flex-col items-center z-30 overflow-scroll md:w-72 lg:w-52 xl:w-72">
+        <aside id="balance-section" class="balance-section bg-[#0F172A] lg:bg-white py-3 px-3 w-52 fixed h-full top-0 lg:right-0 flex-col items-center z-30 overflow-scroll md:w-72 lg:w-52 xl:w-72  transition-all -right-full">
             <div class="flex items-center justify-between">
                 <div class="space-x-4 flex items-center">
                     <div class="relative">
@@ -225,13 +225,13 @@
             </div>
             <p class="text-[.8rem] text-[#A098AE] pt-3">Your Address</p>
             <div class="flex items-center justify-between mb-2">
-                <address class="text-[#2e2e2e] font-bold text-[.8rem]"><img class="icon-[ic--baseline-place] text-[.8rem] text-[#F8B602]" role="img" aria-hidden="true" /> Elm Street, 23</address>
+                <address class="text-[#A098AE] lg:text-[#2e2e2e] font-bold text-[.8rem]"><img class="icon-[ic--baseline-place] text-[.8rem] text-[#F8B602]" role="img" aria-hidden="true" /> Elm Street, 23</address>
                 <button class="border rounded-lg border-[#F8B602] text-[#F8B602] text-[.6rem] py-1 px-2">Change</button>
             </div>
             <p class="text-[.7rem] text-[#A098AE]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quia facere tempore tenetur in eveniet.</p>
             <div class="flex items-center my-3 space-x-2">
-                <button class="border border-[#A098AE] rounded-lg py-1 px-3 text-[.6rem] text-[#2e2e2e]">Add Details</button>
-                <button class="border border-[#A098AE] rounded-lg py-1 px-3 text-[.6rem] text-[#2e2e2e]">Add Note</button>
+                <button class="border border-[#A098AE] rounded-lg py-1 px-3 text-[.6rem] text-[#A098AE] lg:text-[#2e2e2e]">Add Details</button>
+                <button class="border border-[#A098AE] rounded-lg py-1 px-3 text-[.6rem] text-[#A098AE] lg:text-[#2e2e2e]">Add Note</button>
             </div>
             <h3 class="text-white lg:text-[#2e2e2e] font-bold pt-3 mb-3">Order Menú </h3>
             <section class="order-menu space-y-2">
@@ -261,14 +261,14 @@
                     <small class="text-[#A098AE]">Service</small>
                     <small class="text-[#A098AE] font-bold lg:text-[#2e2e2e]">+<span class="text-[#F8B602]">$</span>1.00</small>
                 </div>
-                <div class="flex items-center justify-between pb-8">
+                <div class="flex items-center justify-between pb-4">
                     <p class="text-white lg:text-[#2e2e2e]">Total</p>
                     <p class="text-[#A098AE] font-bold lg:text-[#2e2e2e]">+<span class="text-[#F8B602]">$</span>17.80</p>
                 </div>
                 <div class="space-y-6">
-                    <button class="w-full flex items-center justify-center py-3 bg-[#F5F5F5] rounded-lg space-x-6 xl:text-[1.5rem] border border-[#F8B602]">
+                    <button class="w-full px-3 flex items-center justify-center py-3 bg-[#F5F5F5] rounded-lg space-x-6 xl:text-[1.5rem] border border-[#F8B602]">
                         <img class="icon-[ic--sharp-barcode] bg-[#F8B602] text-[#F8B602]" role="img" aria-hidden="true" />
-                        <small class="text-[.6rem] xl:text-[.8rem]">Have a coupon code?</small>
+                        <small class="text-[.5rem] xl:text-[.7rem]">Have a coupon code?</small>
                         <img class="icon-[ic--outline-keyboard-arrow-right] text-[#F8B602] text-[1.2rem]" role="img" aria-hidden="true" />
                     </button>
                     <button class="w-full bg-[#F8B602] py-2 rounded-lg text-white">Checkout</button>
