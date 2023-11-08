@@ -436,6 +436,11 @@ video {
   display: none;
 }
 
+*{
+  scrollbar-color: initial;
+  scrollbar-width: initial;
+}
+
 body {
   font-family: Poppins, sans-serif;
 }
@@ -910,7 +915,7 @@ body {
   padding-bottom: 0.75rem;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
-  font-size: .8rem;
+  font-size: .7rem;
   --tw-text-opacity: 1;
   color: rgb(160 152 174 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -967,8 +972,10 @@ body {
 
 .popular-dishes-cards{
   position: relative;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-bottom: 1.25rem;
-  width: 10rem;
+  width: 11rem;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1034,8 +1041,10 @@ body {
 
 .recent-order-cards{
   position: relative;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-bottom: 1.25rem;
-  width: 10rem;
+  width: 11rem;
 }
 
 .recent-order-cards > :not([hidden]) ~ :not([hidden]){
@@ -1108,12 +1117,8 @@ body {
   left: 0px;
 }
 
-.left-4{
-  left: 1rem;
-}
-
-.left-5{
-  left: 1.25rem;
+.left-3{
+  left: 0.75rem;
 }
 
 .right-0{
@@ -1132,22 +1137,6 @@ body {
   top: 0px;
 }
 
-.right-12{
-  right: 3rem;
-}
-
-.right-8{
-  right: 2rem;
-}
-
-.right-5{
-  right: 1.25rem;
-}
-
-.top-3{
-  top: 0.75rem;
-}
-
 .top-2{
   top: 0.5rem;
 }
@@ -1164,13 +1153,14 @@ body {
   z-index: 50;
 }
 
-.my-3{
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
-.mb-10{
-  margin-bottom: 2.5rem;
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mb-16{
@@ -1185,8 +1175,8 @@ body {
   margin-bottom: 5rem;
 }
 
-.mb-3{
-  margin-bottom: 0.75rem;
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
 .me-4{
@@ -1229,12 +1219,12 @@ body {
   width: 18rem;
 }
 
-.w-\[2\.5rem\]{
-  width: 2.5rem;
+.w-\[2\.3rem\]{
+  width: 2.3rem;
 }
 
-.w-\[3\.5rem\]{
-  width: 3.5rem;
+.w-\[2\.7rem\]{
+  width: 2.7rem;
 }
 
 .w-full{
@@ -1243,6 +1233,10 @@ body {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.scroll-m-20{
+  scroll-margin: 5rem;
 }
 
 .flex-col{
@@ -1285,28 +1279,22 @@ body {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+.space-y-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
-.space-y-2 > :not([hidden]) ~ :not([hidden]){
+.space-y-3 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
 .space-y-5 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
-.space-y-6 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-scroll{
@@ -1323,6 +1311,11 @@ body {
 
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.rounded-t-xl{
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
 }
 
 .border{
@@ -1373,16 +1366,24 @@ body {
   --tw-gradient-to: #F4C039 var(--tw-gradient-to-position);
 }
 
+.p-1{
+  padding: 0.25rem;
+}
+
 .p-2{
   padding: 0.5rem;
+}
+
+.p-3{
+  padding: 0.75rem;
 }
 
 .p-4{
   padding: 1rem;
 }
 
-.p-8{
-  padding: 2rem;
+.p-5{
+  padding: 1.25rem;
 }
 
 .px-2{
@@ -1398,11 +1399,6 @@ body {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .px-8{
@@ -1425,14 +1421,13 @@ body {
   padding-bottom: 0.75rem;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.pb-14{
+  padding-bottom: 3.5rem;
 }
 
 .pb-4{
@@ -1445,6 +1440,10 @@ body {
 
 .pr-4{
   padding-right: 1rem;
+}
+
+.pt-1{
+  padding-top: 0.25rem;
 }
 
 .pt-3{
@@ -1467,9 +1466,9 @@ body {
   text-align: end;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-\[\.5rem\]{
@@ -1490,10 +1489,6 @@ body {
 
 .text-\[1\.2rem\]{
   font-size: 1.2rem;
-}
-
-.text-\[1\.4rem\]{
-  font-size: 1.4rem;
 }
 
 .text-\[1\.5rem\]{
@@ -1568,27 +1563,201 @@ body {
   transition-duration: 150ms;
 }
 
+.scrollbar{
+  scrollbar-color: var(--scrollbar-thumb, initial) var(--scrollbar-track, initial);
+}
+
+.scrollbar::-webkit-scrollbar-track{
+  background-color: var(--scrollbar-track);
+  border-radius: var(--scrollbar-track-radius);
+}
+
+.scrollbar::-webkit-scrollbar-track:hover{
+  background-color: var(--scrollbar-track-hover, var(--scrollbar-track));
+}
+
+.scrollbar::-webkit-scrollbar-track:active{
+  background-color: var(--scrollbar-track-active, var(--scrollbar-track-hover, var(--scrollbar-track)));
+}
+
+.scrollbar::-webkit-scrollbar-thumb{
+  background-color: var(--scrollbar-thumb);
+  border-radius: var(--scrollbar-thumb-radius);
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover{
+  background-color: var(--scrollbar-thumb-hover, var(--scrollbar-thumb));
+}
+
+.scrollbar::-webkit-scrollbar-thumb:active{
+  background-color: var(--scrollbar-thumb-active, var(--scrollbar-thumb-hover, var(--scrollbar-thumb)));
+}
+
+.scrollbar::-webkit-scrollbar-corner{
+  background-color: var(--scrollbar-corner);
+  border-radius: var(--scrollbar-corner-radius);
+}
+
+.scrollbar::-webkit-scrollbar-corner:hover{
+  background-color: var(--scrollbar-corner-hover, var(--scrollbar-corner));
+}
+
+.scrollbar::-webkit-scrollbar-corner:active{
+  background-color: var(--scrollbar-corner-active, var(--scrollbar-corner-hover, var(--scrollbar-corner)));
+}
+
+.scrollbar{
+  scrollbar-width: auto;
+}
+
+.scrollbar::-webkit-scrollbar{
+  display: block;
+  width: var(--scrollbar-width, 16px);
+  height: var(--scrollbar-height, 16px);
+}
+
+.scrollbar-thin{
+  scrollbar-color: var(--scrollbar-thumb, initial) var(--scrollbar-track, initial);
+}
+
+.scrollbar-thin::-webkit-scrollbar-track{
+  background-color: var(--scrollbar-track);
+  border-radius: var(--scrollbar-track-radius);
+}
+
+.scrollbar-thin::-webkit-scrollbar-track:hover{
+  background-color: var(--scrollbar-track-hover, var(--scrollbar-track));
+}
+
+.scrollbar-thin::-webkit-scrollbar-track:active{
+  background-color: var(--scrollbar-track-active, var(--scrollbar-track-hover, var(--scrollbar-track)));
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb{
+  background-color: var(--scrollbar-thumb);
+  border-radius: var(--scrollbar-thumb-radius);
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover{
+  background-color: var(--scrollbar-thumb-hover, var(--scrollbar-thumb));
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:active{
+  background-color: var(--scrollbar-thumb-active, var(--scrollbar-thumb-hover, var(--scrollbar-thumb)));
+}
+
+.scrollbar-thin::-webkit-scrollbar-corner{
+  background-color: var(--scrollbar-corner);
+  border-radius: var(--scrollbar-corner-radius);
+}
+
+.scrollbar-thin::-webkit-scrollbar-corner:hover{
+  background-color: var(--scrollbar-corner-hover, var(--scrollbar-corner));
+}
+
+.scrollbar-thin::-webkit-scrollbar-corner:active{
+  background-color: var(--scrollbar-corner-active, var(--scrollbar-corner-hover, var(--scrollbar-corner)));
+}
+
+.scrollbar-thin{
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar{
+  display: block;
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-track-white{
+  --scrollbar-track: #fff !important;
+}
+
+.scrollbar-thumb-gray-900{
+  --scrollbar-thumb: #111827 !important;
+}
+
+.scrollbar-thumb-\[\#F8B602\]{
+  --scrollbar-thumb: #F8B602 !important;
+}
+
+.scrollbar-thumb-slate-50{
+  --scrollbar-thumb: #f8fafc !important;
+}
+
+.scrollbar-thumb-slate-800{
+  --scrollbar-thumb: #1e293b !important;
+}
+
+.scrollbar-thumb-\[\#313131\]{
+  --scrollbar-thumb: #313131 !important;
+}
+
+.scrollbar-thumb-\[\#474747\]{
+  --scrollbar-thumb: #474747 !important;
+}
+
+.scrollbar-thumb-\[\#2b2b2b\]{
+  --scrollbar-thumb: #2b2b2b !important;
+}
+
+.scrollbar-track-rounded-lg{
+  --scrollbar-track-radius: 0.5rem;
+}
+
+.scrollbar-thumb-rounded-lg{
+  --scrollbar-thumb-radius: 0.5rem;
+}
+
+.scrollbar-thumb-rounded-xl{
+  --scrollbar-thumb-radius: 0.75rem;
+}
+
+.scrollbar-w-2{
+  --scrollbar-width: 0.5rem;
+}
+
+.scrollbar-w-1{
+  --scrollbar-width: 0.25rem;
+}
+
+.scrollbar-w-10{
+  --scrollbar-width: 2.5rem;
+}
+
+.scrollbar-w-16{
+  --scrollbar-width: 4rem;
+}
+
+.scrollbar-w-1\.5{
+  --scrollbar-width: 0.375rem;
+}
+
+.scrollbar-w-6{
+  --scrollbar-width: 1.5rem;
+}
+
 .hover\:text-\[\#F8B602\]:hover{
   --tw-text-opacity: 1;
   color: rgb(248 182 2 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){
+  .md\:block{
+    display: block;
+  }
+
   .md\:w-72{
     width: 18rem;
+  }
+
+  .md\:p-9{
+    padding: 2.25rem;
   }
 
   .md\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-  }
-
-  .md\:text-\[\.8rem\]{
-    font-size: .8rem;
-  }
-
-  .md\:text-\[\.9rem\]{
-    font-size: .9rem;
   }
 
   .md\:text-\[2rem\]{
@@ -1634,10 +1803,6 @@ body {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
-  .lg\:p-9{
-    padding: 2.25rem;
-  }
-
   .lg\:px-7{
     padding-left: 1.75rem;
     padding-right: 1.75rem;
@@ -1648,9 +1813,13 @@ body {
     padding-bottom: 0.25rem;
   }
 
-  .lg\:py-10{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+  .lg\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .lg\:pb-3{
+    padding-bottom: 0.75rem;
   }
 
   .lg\:pl-52{
@@ -1661,12 +1830,21 @@ body {
     padding-right: 13rem;
   }
 
+  .lg\:pt-2{
+    padding-top: 0.5rem;
+  }
+
   .lg\:pt-4{
     padding-top: 1rem;
   }
 
   .lg\:pt-5{
     padding-top: 1.25rem;
+  }
+
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-\[\#2E2E2E\]{
@@ -1677,11 +1855,6 @@ body {
   .lg\:text-\[\#2e2e2e\]{
     --tw-text-opacity: 1;
     color: rgb(46 46 46 / var(--tw-text-opacity));
-  }
-
-  .first-letter\:lg\:py-10::first-letter{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
   }
 }
 
@@ -1696,6 +1869,10 @@ body {
 
   .xl\:w-72{
     width: 18rem;
+  }
+
+  .xl\:w-\[3\.5rem\]{
+    width: 3.5rem;
   }
 
   .xl\:pr-72{

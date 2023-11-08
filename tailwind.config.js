@@ -11,6 +11,7 @@ module.exports = {
   },
   plugins: [
     addDynamicIconSelectors(),
+    require('tailwind-scrollbar') ( {  nocompatible : true  } ),
   ],
 }
 
